@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="./modal/css/main.css">
+    <script src="https://kit.fontawesome.com/0096215a9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row ucase btw align-h header">
+            <h3 class="">salut moi c'est <span class="marker anime"></span> developpeur web</h3>
+            <nav class="navbar">
+                <ul class="row btw">
+                    <li><a href="travaux.html">travaux</a></li>
+                    <li><a href="apropos.html">a propos de moi</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="ucase boxe">
+            <div class="left row btw about">
+                <h1 class="big">a propos<span class="marker">de moi</span></h1>
+                <img src="./img/avatar.jpg" alt="avatar" height="70" width="70"> 
+            </div>
+            <div class="design travel">
+                <p>Je suis <span class="marker">zinga</span> cle<span class="marker">nn</span> jov<span class="marker">ane</span>, a la base technicien opérateur forage ! passionné du numérique je décide de suivre une formation de <span class="marker">dévelo</span>ppeur web et web mobile pour en faire mon nouveau métier.</p>
+            </div>
+            <div class="column btw social social-rev">
+                <a href="#modal"><img src="./img/sms.png" alt="contact" height="45" width="45"></a>
+                <img src="./img/linkedin.png" alt="linkedin" height="45" width="45">
+                <img src="./img/whatsapp.png" alt="whatsapp" height="45" width="45">
+            </div>
+            <div class="home">
+                <a href="index.html"><img src="./img/accueil.png" alt="linkedin" height="45" width="45"></a>
+            </div>
+        </div>
+        <div class="row arnd align-h action act-about act-ab">
+            <h3>Obtenir une copie de mon CV</h3>
+            <a href="#">Télécharger CV</a>
+        </div>
+    </div>
+    
+    <div class="contact1" id="modal">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="./modal/images/img-01.png" alt="IMG">
+			</div>
+				<a href="#"><button type="button" class="modal-close" data-dismiss="modal">&times;</button></a>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Contactez-Moi
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="name" placeholder="Nom">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="sujet">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+					<textarea class="input1" name="message" placeholder="Message"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Envoyez
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./anime.js"></script>
+</body>
+</html>
