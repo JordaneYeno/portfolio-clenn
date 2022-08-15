@@ -110,7 +110,9 @@ a {
 }
 
 
-.boxe .left .avatar {
+.boxe .left .avatar,
+.boxe .change img,
+.boxe .about img{
     border-radius: 50%;
 }
 
@@ -248,6 +250,7 @@ a {
 .social img{
     transition: transform 350ms;
     will-change: transform;
+    margin-bottom: 1em;
 }
 
 .social img:hover{
@@ -435,6 +438,7 @@ a {
     width: 200px;
     margin: 20px;
     cursor: pointer;
+    position: relative;
 }
 
 .work-item .img-content,
@@ -446,7 +450,7 @@ a {
     transition: transform 0.4s;
 }
 
-.work-item .img-content {box-shadow: 0 0 13px rgba(0, 0, 0, 0.25)}
+.work-item .img-content {box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);margin: auto;}
 
 .work-item:hover img {
     transform: scale(1.2);
@@ -458,7 +462,22 @@ a {
     color: #313131;
     transition: color 0.4s;
     font-size: large;
-    margin-top: 1rem;
+    margin-top: -1rem;
+
+    width: 85%;
+    background: #fff;
+    margin: 0 7%;
+    margin-top: 0px;
+    padding: 0;
+    color: #095a83;
+    text-align: center;
+    font-size: 20px;
+    min-height: 70px;
+    line-height: 70px !important;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.2);
+
+    position: absolute;
+    bottom: -2.5rem;
 }
 
 .project-name:hover {
@@ -468,29 +487,53 @@ a {
     text-align: center;
 }
 
+
+.footer_bottom {
+    margin-top: 2.1rem;
+}
+
+.footer_bottom p.crp {
+    background: #095a83;
+    padding: 15px 0;
+    float: left;
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom {
+    margin-top: 5rem;
+}
+
+
 /* FIN SUPPLEM */
 
 
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 370px) and (min-width: 449px) {
+@media screen and (min-width: 370px) and (max-width: 449px) {
 
-    .content {
+    /* .content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        width: fit-content;
-        max-width: 2.1rem;
+        width: auto;
+        background-color: red;
+    }
+    
+    .work-item {
+        width: auto;
     }
 
     
     .section-item .title {
         margin-bottom: 1rem;
         text-align: center;
-    }
-    
-    /* FIN DE TRAVAUX */
+    } */
+
 }
 
 
@@ -565,7 +608,6 @@ a {
         flex-direction: inherit;
     }
     .boxe .change img{
-        border-radius: 50%;
         margin: 0;
     }
     .boxe .travel {
@@ -579,7 +621,11 @@ a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        width: fit-content;
+        width: auto;
+    }
+    
+    .work-item {
+        width: auto;
     }
     
     /* FIN DE TRAVAUX */
@@ -604,7 +650,6 @@ a {
         margin: 1.3rem 0 1.3rem 0;
         width: 150px;
         height: auto;
-        border-radius: 50%;
     }
     .boxe .travel{
         font-weight: bold;
